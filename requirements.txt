@@ -1,0 +1,9 @@
+streamlit
+yfinance
+plotly
+pandas
+numpy
+requests
+beautifulsoup4
+fredapi
+scikit-learn
