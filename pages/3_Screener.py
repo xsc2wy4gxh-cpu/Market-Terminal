@@ -387,8 +387,8 @@ if st.session_state.df_screen is not None:
         return "color:#00d4aa" if val >= 0 else "color:#ff6b6b"
 
     styled = df_filtered.style \
-        .applymap(color_score, subset=["Score"]) \
-        .applymap(color_var,   subset=["Var. %"]) \
+        .map(color_score, subset=["Score"]) \
+        .map(color_var,   subset=["Var. %"]) \
         .format({
             "Prix":        "{:.2f}",
             "Var. %":      "{:+.2f}%",
